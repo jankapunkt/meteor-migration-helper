@@ -13,7 +13,7 @@ No need to upgrade to 3.0 now to find out, what's still using Fibers.
 ## Installation
 
 ```shell
-$ meteor add jkuetser:migration-helper
+$ meteor add jkuester:migration-helper
 ```
 
 Now open in your Meteor.js project the file `.meteor/packages`
