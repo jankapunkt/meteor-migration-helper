@@ -10,9 +10,6 @@ migrated in your current 2.x code.
 
 No need to upgrade to 3.0 now to find out, what's still using Fibers.
 
-There is also an article, which covers this packages functionality:
-https://dev.to/jankapunkt/prepare-your-meteorjs-project-for-the-big-30-release-24l8
-
 ## Installation
 
 ```shell
