@@ -1,7 +1,7 @@
 /* eslint-env meteor */
 Package.describe({
   name: 'jkuester:migration-helper',
-  version: '1.0.0',
+  version: '1.0.1',
   // Brief, one-line summary of the package.
   summary: 'Detect where migration is required in Meteor.js 2.x',
   // URL to the Git repository containing the source code for this package.
@@ -12,10 +12,10 @@ Package.describe({
 })
 
 Package.onUse(function (api) {
-  api.versionsFrom('2.13.3')
+  api.versionsFrom(['1.12.1', '2.3']);
   api.use('ecmascript')
   api.use('mongo')
-  api.use('mdg:validated-method')
+  api.use('mdg:validated-method@1.3.0')
   api.addFiles('migration-helper.js', 'server')
   api.mainModule('index.js', 'server')
 })
