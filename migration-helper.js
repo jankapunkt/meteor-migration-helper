@@ -19,12 +19,14 @@ const patch = (proto, name) => {
   const fn = function (...args) {
     const self = this
     const location = getLocation()
+    const isWrappedAsync = location.includes(`as ${name}Async`)
 
-    if (!fn.__asyncChecked) {
+    if (!isWrappedAsync && !fn.__asyncChecked) {
       console.warn(`Deprecated: ${className}.${name} needs to be migrated to ${name}Async in collection "${self._name}"!`)
       console.warn('=>', location)
       fn.__asyncChecked = true
     }
+
     return original.call(self, ...args)
   }
 
