@@ -1,7 +1,7 @@
 /* eslint-env meteor */
 Package.describe({
   name: 'jkuester:migration-helper',
-  version: '1.0.1',
+  version: '1.0.2',
   // Brief, one-line summary of the package.
   summary: 'Detect where migration is required in Meteor.js 2.x',
   // URL to the Git repository containing the source code for this package.
